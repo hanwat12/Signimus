@@ -1,1 +1,67 @@
+package Task9;
+
+public class CountCharacter {
+
+    public static void main(String[] args) {
+        
+        String s = "HimanshuKumarHanwat";
+
+        int len = s.length();
+        int count =0;
+
+        int str = 'H';
+
+        for(int i=0; i<len; i++){
+
+
+        }
+    }
+    }
+
+package Task9;
+
+public class Palindrome {
+
+public static int isPalindrome(String s){
+    int len = s.length();
+
+    for(int i=0; i<len / 2; i++){
+
+        if(s.charAt(i) != s.charAt(len -i -1))
+        return 0;
+    }
+    return 1;
+    
+}
+public static void main(String[] args) {
+    String s ="level";
+
+    System.out.println(isPalindrome(s));
+    System.out.println(s+" Given String is Palindrome ..");
+}
+
+}
+
+
+
+package Task9;
+
+public class ReverseString {
+
+    public static void main(String[] args) {
+        
+        String s = "Himanshu";
+
+        int len = s.length();
+
+        String rev = " ";
+
+        for(int i=len-1; i>=0; i--){
+           rev = rev + s.charAt(i);
+        }
+        System.out.println("Orignal String :"+ s);
+        System.out.println("Reverse String :"+rev);
+    }
+
+}
 
