@@ -1,0 +1,68 @@
+package Task16;
+
+public class FactorialRecursion {
+
+    public static int Factorial(int n){
+
+        if (n == 0 || n==1){
+            return 1;
+        }
+                return n * Factorial(n-1);
+    }
+
+    public static void main(String[] args) {
+        
+        int ans1 = Factorial(5);
+
+        System.out.println("factorial of Number 5 is :" + ans1);
+    }
+}
+
+_____________________________________________________________________
+package Task16;
+
+public class FibonacciSeries {
+
+    public static void Fibonacci(int N){
+        int n1 = 0 , n2 =1;
+        for(int i=0; i<N; i++){
+            System.out.println(n1 +" ");
+
+            int sum = n1 + n2;
+            n1 = n2 ;
+            n2 = sum ;
+
+        }
+    }
+
+    public static void main(String[] args) {
+       
+        int   N =10;
+        Fibonacci(N);
+    }
+}
+
+_________________________________________________________________________
+
+package Task16;
+
+public class ReverseString {
+
+   public static void main(String[] args) {
+    String s = "Hello";
+    String rev =" ";
+
+    for(int i=s.length()-1; i>=0; i--){
+     rev = rev +s.charAt(i);
+
+    }
+    System.out.println(rev);
+   }
+
+}
+
+______________________________________________________________________________
+
+
+
+
